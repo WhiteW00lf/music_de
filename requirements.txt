@@ -1,0 +1,7 @@
+requests
+pandas
+boto3 
+dbt-core 
+dbt-snowflake
+python-dotenv
+black
