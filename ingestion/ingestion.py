@@ -83,10 +83,10 @@ if __name__ == "__main__":
     extract_from_tracks_api()
 
     df = pd.json_normalize(artists_data)
-    df.to_csv("artists.csv")
+    df.to_csv("artists.csv", index=False)
 
     df = pd.json_normalize(tracks_data)
-    df.to_csv("tracks.csv")
+    df.to_csv("tracks.csv",index=False)
 
     upload_to_s3("artists.csv")
     upload_to_s3("tracks.csv")
