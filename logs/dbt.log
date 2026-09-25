@@ -1,0 +1,94 @@
+==================== 2026-09-25T09:16:26.876537Z | 01a0d7da-0d69-7571-a374-94b89769b855 ====================
+09:16:26.880782 [info ]: Installing dbt project and profile setup
+09:16:26.927698 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+09:16:26.930998 [info ]: Success Project created successfully!
+09:16:26.931305 [info ]: Info Project name: jaffle_shop
+09:16:26.931527 [info ]: Info Project directory: jaffle_shop
+09:16:41.007279 [info ]: Info Using existing profile 'netflixproject'
+09:16:41.008626 [info ]: Success Set profile 'netflixproject' in dbt_project.yml
+09:16:41.019684 [info ]: Validating profile inputs, adapters, and connection
+
+09:16:41.020375 [info ]: dbt 2.0.6
+09:16:41.025589 [info ]: Started loading project
+09:16:41.058213 [info ]: Loading ~/.dbt/profiles.yml
+09:16:41.072685 [info ]: Finished loading project [  0.05s]
+09:16:41.075707 [info ]: Started debugging
+09:16:41.076416 [info ]: Debugging profile: dev
+09:16:41.076606 [info ]: Debugging dbt version: 2.0.6
+09:16:41.076710 [info ]: Debugging platform: windows x86_64 (windows)
+09:16:41.077544 [info ]: Debugging adapter type: snowflake (remote)
+09:16:41.126149 [info ]: Debugging dependencies:
+  git: OK
+09:16:41.129241 [info ]: Debugging connection:
+  "account": "FCFWJPX-TEB63642",
+  "user": "SURYAPJR",
+  "database": "MOVIELENS",
+  "warehouse": "coffee_wh",
+  "schema": "raw",
+  "role": "ACCOUNTADMIN"
+09:16:41.137696 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18
+09:17:17.285901 [debug]: borrow_tlocal_connection() took 36.1520966s
+09:17:17.289926 [debug]: create_debug_span(...).entered() took 113.3µs
+09:17:17.955894 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 665.7596ms
+09:17:17.955924 [debug]: reader.schema() took 5.6µs
+09:17:17.957954 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 667.9856ms
+09:17:17.958116 [debug]: concat_batches + normalize_result_column_names took 107.4µs
+09:17:17.958213 [debug]: record_current_span_status_from_attrs took 83.6µs
+09:17:17.958239 [debug]: Query executed on node unknown:
+select 1 as id
+09:17:17.958289 [debug]: drop(query_span_guard) (span exit/export) took 63.4µs
+09:17:17.958433 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 672.485ms
+09:17:17.958483 [info ]: Debugging connection test: OK (36.8s)
+09:17:17.959174 [info ]: Debugged All checks passed!
+09:17:17.959429 [info ]: Finished debugging [ 36.88s]
+09:17:18.126545 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [51.3s]
+==================== 2026-09-25T09:17:51.245633Z | 01a0d7db-570b-7852-bc9d-f93f09528340 ====================
+09:17:51.245835 [info ]: Installing dbt project and profile setup
+09:17:51.290163 [info ]: Info Created .vscode/extensions.json with dbt extension recommendation
+09:17:51.290874 [info ]: Success Project created successfully!
+09:17:51.291223 [info ]: Info Project name: jaffle_shop
+09:17:51.291442 [info ]: Info Project directory: jaffle_shop
+09:17:55.863347 [info ]: Info Setting up your profile...
+09:17:55.863845 [info ]: Loading ~/.dbt/profiles.yml
+09:17:55.864408 [info ]: Info Creating new profile...
+09:21:34.896761 [info ]: Success Profile written to C:\Users\Surya\.dbt\profiles.yml
+09:21:34.897107 [info ]: Validating profile inputs, adapters, and connection
+
+09:21:34.897240 [info ]: dbt 2.0.6
+09:21:34.897585 [info ]: Started loading project
+09:21:34.898817 [info ]: Loading ~/.dbt/profiles.yml
+09:21:34.915486 [info ]: Finished loading project [  0.02s]
+09:21:34.915857 [info ]: Started debugging
+09:21:34.916037 [info ]: Debugging profile: dev
+09:21:34.916213 [info ]: Debugging dbt version: 2.0.6
+09:21:34.916370 [info ]: Debugging platform: windows x86_64 (windows)
+09:21:34.916499 [info ]: Debugging adapter type: snowflake (remote)
+09:21:34.958259 [info ]: Debugging dependencies:
+  git: OK
+09:21:34.958895 [info ]: Debugging connection:
+  "account": "FCFWJPX-TEB63642",
+  "user": "SURYAPJR",
+  "database": "music",
+  "warehouse": "coffee_wh",
+  "schema": "raw",
+  "role": "ACCOUNTADMIN"
+09:21:34.959804 [debug]: Snowflake driver resolved: snowflake 0.21.0.dev+dbt0.21.18
+09:21:37.160004 [debug]: borrow_tlocal_connection() took 2.2003777s
+09:21:37.170813 [debug]: create_debug_span(...).entered() took 60.6µs
+09:21:37.555776 [debug]: stmt.execute() (submit+wait_for_completion, returns reader) took 384.6492ms
+09:21:37.555823 [debug]: reader.schema() took 6µs
+09:21:37.559132 [debug]: do_execute(conn) (closure: stmt.execute + schema + batch loop) took 388.2721ms
+09:21:37.559264 [debug]: concat_batches + normalize_result_column_names took 97.9µs
+09:21:37.559309 [debug]: record_current_span_status_from_attrs took 27.4µs
+09:21:37.559328 [debug]: Query executed on node unknown:
+select 1 as id
+09:21:37.559371 [debug]: drop(query_span_guard) (span exit/export) took 51.5µs
+09:21:37.559483 [debug]: adapter.execute() (full call, incl. adbc_execute_with_options) took 399.4515ms
+09:21:37.559520 [info ]: Debugging connection test: OK (2.6s)
+09:21:37.560394 [info ]: Debugged All checks passed!
+09:21:37.560751 [info ]: Finished debugging [  2.64s]
+09:21:37.732897 [info ]: 
+==================== Execution Summary =====================
+Finished 'init' successfully for target 'dev' [3m 46s]
