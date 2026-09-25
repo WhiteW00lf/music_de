@@ -68,12 +68,13 @@ def extract_from_tracks_api():
 
 
 def upload_to_s3(FILE):
-    """ Uploads file to S3 bucket"""
-    today = f"dt={datetime.today()}/{FILE}.csv"
+    """ Uploads file to S3 bucket, partitioned daily using a Hive-style dt= prefix"""
+    dt = datetime.today().strftime("%Y-%m-%d")
+    key = f"dt={dt}/{FILE}"
     BUCKET = os.getenv('BUCKET')
     s3 = boto3.client('s3')
     try:
-        s3.upload_file(FILE,BUCKET,FILE)
+        s3.upload_file(FILE, BUCKET, key)
     except ClientError:
         logging.error("Couldn't uplod to s3")
 
